@@ -19,7 +19,7 @@ export class GiphySearchManualComponent implements OnInit {
   }
 
   pesquisarGiphy(){
-    this.giphySearchService.pesquisarGiphy('5', 'good')
+    this.giphySearchService.pesquisarGiphy('5', 'not bac')
       .subscribe((response: Response) =>{
        this.gifs = response.json().data;
       });
