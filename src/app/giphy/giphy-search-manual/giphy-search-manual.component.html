@@ -1,5 +1,5 @@
-Term: <input type="text">
-Limit : <input type="number" (keyup)="pesquisarGiphy()">
+Term: <input type="text" [(ngModel)]="term">
+Limit : <input type="number" (keyup)="pesquisarGiphy()" [(ngModel)]="limit">
 <input type="button" value="Pesquisar" (click)="pesquisarGiphy()" >
 <br/>
 

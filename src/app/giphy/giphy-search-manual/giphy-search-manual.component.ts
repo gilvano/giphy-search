@@ -11,6 +11,9 @@ export class GiphySearchManualComponent implements OnInit {
 
   gifs: any[] = [];
 
+  limit: string;
+  term: string;
+
   constructor(private giphySearchService: GiphySearchService) {
   }
 
@@ -19,7 +22,7 @@ export class GiphySearchManualComponent implements OnInit {
   }
 
   pesquisarGiphy(){
-    this.giphySearchService.pesquisarGiphy('5', 'not bac')
+    this.giphySearchService.pesquisarGiphy(this.limit, this.term)
       .subscribe((response: Response) =>{
        this.gifs = response.json().data;
       });
