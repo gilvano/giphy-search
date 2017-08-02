@@ -28,6 +28,6 @@ export class GiphySearchManualComponent implements OnInit {
        this.gifs = response.json().data;
       });
 
-    this.title.setTitle('Term' + this.term);
+    this.title.setTitle('Term: ' + this.term);
   }
 }
