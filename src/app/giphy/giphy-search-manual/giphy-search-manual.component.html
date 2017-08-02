@@ -6,6 +6,6 @@ Limit : <input type="number" (keyup)="pesquisarGiphy()" [(ngModel)]="limit">
 
 <!--{{gifs | json}}-->
 
-<a *ngFor="let gif of gifs">
-  <img src="http://i.giphy.com/{{gif.id}}.gif" title="image {{gif.id}}" >
-</a>
+<giphy-search-list [gifsList]="gifs"></giphy-search-list>
+
+
