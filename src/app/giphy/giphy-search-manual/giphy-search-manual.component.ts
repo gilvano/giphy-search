@@ -23,9 +23,9 @@ export class GiphySearchManualComponent implements OnInit {
     this.title.setTitle('By Gilvano');
   }
 
-  pesquisarGiphy(){
+  pesquisarGiphy() {
     this.giphySearchService.pesquisarGiphy(this.limit, this.term)
-      .subscribe((response: Response) =>{
+      .subscribe((response: Response) => {
        this.gifs = response.json().data;
       });
 

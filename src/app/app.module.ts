@@ -1,3 +1,4 @@
+import { ContatoModule } from './contato/contato.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from "@angular/http";
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule,
     HttpModule,
     GiphySearchManualComponentModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ContatoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
