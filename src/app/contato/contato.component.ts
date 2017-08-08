@@ -14,7 +14,7 @@ export class ContatoComponent implements OnInit {
   }
 
   enviarContato(contatoForm: NgForm) {
-      console.log(contatoForm);
+      console.log(contatoForm.value);
   }
 
 }
