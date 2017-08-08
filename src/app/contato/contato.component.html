@@ -12,6 +12,9 @@
     <label ngModelGroup="contato" #contatoUsuario="ngModelGroup">
         <span>Email</span>
         <input type="email" placeholder="Seu e-mail aqui..." name="email" ngModel required>
+
+        <span>Mensagem: </span>
+        <input type="text" placeholder="Sua mensagel" name="mensagem" ngModel required>
     </label>
 
     <button type="submit"  [disabled]="f.invalid">Sign up</button>
