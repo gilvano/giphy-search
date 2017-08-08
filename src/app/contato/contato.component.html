@@ -1,9 +1,13 @@
 <form #f="ngForm" (ngSubmit)="enviarContato(f)">
     <label>
         <span>Seu nome completo</span>
-        <input id="nome" type="text" name="nome" placeholder="seu nome" ngModel
-          ngModel minlength="2" required>
+        <input id="nome" type="text" name="nomeCompleto" placeholder="seu nome" ngModel
+          #nomeCompleto="ngModel" ngModel minlength="2" required>
     </label>
+
+    <div *ngIf="nomeCompleto.errors?.required && nomeCompleto.touched" class="error">
+        O nome é obrigatório.
+    </div>
 
     <label ngModelGroup="contato" #contatoUsuario="ngModelGroup">
         <span>Email</span>
@@ -12,3 +16,12 @@
 
     <button type="submit"  [disabled]="f.invalid">Sign up</button>
 </form>
+
+
+<p>
+  {{ nomeCompleto.errors | json }}
+</p>
+
+<p>
+  {{ f.controls.nomeCompleto?.errors | json }}
+</p>
