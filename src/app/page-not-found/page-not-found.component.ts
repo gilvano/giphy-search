@@ -1,15 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-page-not-found',
-  templateUrl: './page-not-found.component.html',
-  styleUrls: ['./page-not-found.component.css']
+  selector: 'not-found',
+  template: '<P>Página não encontrada </P>  <img src = "http://i.giphy.com/LHZyixOnHwDDy.gif" (click)="voltar()">'
 })
 export class PageNotFoundComponent implements OnInit {
 
-  constructor() { }
+  constructor(private location: Location) {
+  }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    console.log('url atual: ', document.location.href);
+    console.log('location', location.href);
+    // window.open('http://google.com');
+  }
+
+  voltar(): void {
+    this.location.back();
   }
 
 }

@@ -8,7 +8,6 @@ import { RouterModule } from '@angular/router';
     /**
      *  Colocar rotas lazy
      */
-     { path: '**', component: PageNotFoundComponent }
   ]) ],
   exports: [RouterModule]
 })
