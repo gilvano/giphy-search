@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { GiphySearchManualComponentModule } from "./giphy/giphy-search-manual/giphy-search-manual.module";
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundModule } from './page-not-found/page-not-found.module';
+import { GiphySearchAutoModule } from './giphy/giphy-search-auto/giphy-search-auto.module';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { PageNotFoundModule } from './page-not-found/page-not-found.module';
     GiphySearchManualComponentModule,
     AppRoutingModule,
     ContatoModule,
-    PageNotFoundModule
+    PageNotFoundModule,
+    GiphySearchAutoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
