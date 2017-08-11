@@ -13,8 +13,9 @@ export class ContatoComponentService {
 
   enviarContato(contatoForm: any): Observable<Response> {
     let nomeCompleto = contatoForm.nomeCompleto;
-    let email = contatoForm.email;
-    let mensagem = contatoForm.mensagem;
+    let email = contatoForm.contato.email;
+    let mensagem = contatoForm.contato.mensagem;
+    console.log(contatoForm.contato);
 
     return this.http.post(host, {email: email, from: nomeCompleto, message: mensagem});
   }
