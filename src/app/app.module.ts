@@ -7,10 +7,12 @@ import { FormsModule } from "@angular/forms";
 import { AppComponent } from './app.component';
 import { GiphySearchManualComponentModule } from "./giphy/giphy-search-manual/giphy-search-manual.module";
 import { AppRoutingModule } from './app-routing.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
