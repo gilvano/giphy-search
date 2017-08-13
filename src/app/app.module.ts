@@ -25,8 +25,6 @@ import { GiphySearchAutoModule } from './giphy/giphy-search-auto/giphy-search-au
     AppRoutingModule,
     ContatoModule,
     AppWelcomeModule,
-    GiphySearchManualModule,
-    GiphySearchAutoModule,
     PageNotFoundModule
   ],
   providers: [],

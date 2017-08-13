@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 
-const routes: Routes = [{ path: 'giphy-search', component: GiphySearchManualComponent} ];
+const routes: Routes = [{ path: '', component: GiphySearchManualComponent} ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

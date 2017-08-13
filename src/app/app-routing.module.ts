@@ -7,7 +7,14 @@ import { RouterModule } from '@angular/router';
     /**
      *  Colocar rotas lazy
      **/
-
+    {
+      path: 'auto',
+      loadChildren: 'app/giphy/giphy-search-auto/giphy-search-auto.module#GiphySearchAutoModule'
+    },
+    {
+      path: 'giphy-search',
+      loadChildren: 'app/giphy/giphy-search-manual/giphy-search-manual.module#GiphySearchManualModule'
+    }
   ]) ],
   exports: [RouterModule]
 })
