@@ -2,9 +2,9 @@ import { DiretivaCommonModuleRoutingModule } from './diretiva-common-module-roun
 import { DiretivaCommonModuleComponent } from './diretiva-common-module.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgclassExemploComponent } from './ngclass-exemplo/ngclass-exemplo.component';
-import { NgstyleExemploComponent } from './ngstyle-exemplo/ngstyle-exemplo.component';
-import { NgswitchExemploComponent } from './ngswitch-exemplo/ngswitch-exemplo.component';
+import { NgClassExemploComponent } from './ngclass-exemplo/ngclass-exemplo.component';
+import { NgStyleExemploComponent } from './ngstyle-exemplo/ngstyle-exemplo.component';
+import { NgSwitchExemploComponent } from './ngswitch-exemplo/ngswitch-exemplo.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -12,9 +12,9 @@ import { RouterModule } from '@angular/router';
     CommonModule, RouterModule, DiretivaCommonModuleRoutingModule
   ],
   declarations: [DiretivaCommonModuleComponent,
-    NgclassExemploComponent,
-    NgstyleExemploComponent,
-    NgswitchExemploComponent ],
+    NgClassExemploComponent,
+    NgStyleExemploComponent,
+    NgSwitchExemploComponent ],
   providers: []
 })
 export class DiretivaCommonModuleModule { }

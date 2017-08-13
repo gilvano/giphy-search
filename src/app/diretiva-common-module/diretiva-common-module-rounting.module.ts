@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { DiretivaCommonModuleComponent } from './diretiva-common-module.component';
-import { NgstyleExemploComponent } from './ngstyle-exemplo/ngstyle-exemplo.component';
-import { NgclassExemploComponent } from './ngclass-exemplo/ngclass-exemplo.component';
-import { NgswitchExemploComponent } from './ngswitch-exemplo/ngswitch-exemplo.component';
+import { NgStyleExemploComponent } from './ngstyle-exemplo/ngstyle-exemplo.component';
+import { NgClassExemploComponent } from './ngclass-exemplo/ngclass-exemplo.component';
+import { NgSwitchExemploComponent } from './ngswitch-exemplo/ngswitch-exemplo.component';
 
 
 
@@ -11,9 +11,9 @@ import { NgswitchExemploComponent } from './ngswitch-exemplo/ngswitch-exemplo.co
 
   imports: [ RouterModule.forChild([
       { path: '', component: DiretivaCommonModuleComponent },
-      { path: 'ngstyle', component: NgstyleExemploComponent },
-      { path: 'ngclass', component: NgclassExemploComponent },
-      { path: 'ngswitch', component: NgswitchExemploComponent },
+      { path: 'ngstyle', component: NgStyleExemploComponent },
+      { path: 'ngclass', component: NgClassExemploComponent },
+      { path: 'ngswitch', component: NgSwitchExemploComponent },
     ])
   ]
 })

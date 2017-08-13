@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-ngclass-exemplo',
-  templateUrl: './ngclass-exemplo.component.html',
-  styleUrls: ['./ngclass-exemplo.component.css']
+  selector: 'ngclass-exemplo',
+  templateUrl: 'ngclass-exemplo.component.html',
+  styleUrls: [ 'ngclass-exemplo.component.css' ]
 })
-export class NgclassExemploComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class NgClassExemploComponent {
+  flat: boolean = true;
+  dark: boolean = true;
 }

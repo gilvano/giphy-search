@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-ngstyle-exemplo',
-  templateUrl: './ngstyle-exemplo.component.html',
-  styleUrls: ['./ngstyle-exemplo.component.css']
+  selector: 'ngstyle-exemplo',
+  templateUrl: 'ngstyle-exemplo.component.html',
+  styleUrls: [ 'ngstyle-exemplo.component.css' ]
 })
-export class NgstyleExemploComponent implements OnInit {
+export class NgStyleExemploComponent {
 
-  constructor() { }
+  cor: string = 'brown';
 
-  ngOnInit() {
-  }
+  borderStyle = '1px solid black';
+
+  alertStyles = {
+    'color': 'yellow',
+    'font-weight': 'bold',
+    'borderBottom': this.borderStyle
+  };
+
 
 }
