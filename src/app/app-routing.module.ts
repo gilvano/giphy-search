@@ -14,6 +14,10 @@ import { RouterModule } from '@angular/router';
     {
       path: 'giphy-search',
       loadChildren: 'app/giphy/giphy-search-manual/giphy-search-manual.module#GiphySearchManualModule'
+    },
+    {
+      path: 'diretiva-common-module',
+      loadChildren: 'app/diretiva-common-module/diretiva-common-module.module#DiretivaCommonModuleModule'
     }
   ]) ],
   exports: [RouterModule]
