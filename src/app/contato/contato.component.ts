@@ -4,8 +4,7 @@ import { NgForm } from "@angular/forms/forms";
 
 @Component({
   selector: 'app-contato',
-  templateUrl: './contato.component.html',
-  styleUrls: ['./contato.component.css']
+  templateUrl: './contato.component.html'
 })
 export class ContatoComponent implements OnInit {
 

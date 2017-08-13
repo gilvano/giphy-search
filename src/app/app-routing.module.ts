@@ -6,7 +6,8 @@ import { RouterModule } from '@angular/router';
   imports: [RouterModule.forRoot([
     /**
      *  Colocar rotas lazy
-     */
+     **/
+
   ]) ],
   exports: [RouterModule]
 })
