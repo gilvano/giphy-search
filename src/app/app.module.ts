@@ -9,8 +9,6 @@ import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {PageNotFoundModule} from './page-not-found/page-not-found.module';
 import {AppWelcomeComponent} from './app-welcome/app-welcome.component';
-import { GiphySearchManualModule } from './giphy/giphy-search-manual/giphy-search-manual.module';
-import { GiphySearchAutoModule } from './giphy/giphy-search-auto/giphy-search-auto.module';
 
 
 @NgModule({
