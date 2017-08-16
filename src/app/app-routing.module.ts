@@ -4,9 +4,10 @@ import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [RouterModule.forRoot([
-    /**
-     *  Colocar rotas lazy
-     **/
+    {
+      path: 'change-detection',
+      loadChildren: 'app/change-detection/change-detection.module#ChangeDetectionModule'
+    },
     {
       path: 'auto',
       loadChildren: 'app/giphy/giphy-search-auto/giphy-search-auto.module#GiphySearchAutoModule'
